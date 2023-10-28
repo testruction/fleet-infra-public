@@ -1,0 +1,16 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: demo
+  namespace: default
+spec:
+  interval: 5m
+  chart:
+    spec:
+      chart: fastapi
+      version: 0.2.0
+      sourceRef:
+        kind: GitRepository
+        name: fastapi-demo
+        namespace: default
+      interval: 1m

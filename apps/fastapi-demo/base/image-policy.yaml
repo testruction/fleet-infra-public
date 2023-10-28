@@ -1,0 +1,22 @@
+---
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImagePolicy
+metadata:
+  name: backend
+spec:
+  imageRepositoryRef:
+    name: backend
+  policy:
+    semver:
+      range: '>=1.0.0'
+---
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImagePolicy
+metadata:
+  name: frontend
+spec:
+  imageRepositoryRef:
+    name: frontend
+  policy:
+    semver:
+      range: '>=1.0.0'
