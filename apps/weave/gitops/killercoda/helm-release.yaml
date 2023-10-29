@@ -4,6 +4,8 @@ metadata:
   name: gitops
   namespace: flux-system
 spec:
+  targetNamespace: flux-system
+  storageNamespace: flux-system
   values:
     WEAVE_GITOPS_FEATURE_TELEMETRY: "true"
     service:
