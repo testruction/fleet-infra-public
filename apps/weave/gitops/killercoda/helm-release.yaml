@@ -10,3 +10,7 @@ spec:
     WEAVE_GITOPS_FEATURE_TELEMETRY: "true"
     service:
       type: LoadBalancer
+    adminUser:
+      create: true
+      username: admin
+      passwordHash: $2a$10$gy4cmsyzi9GYvVKylDWig.mos4YuALjnDxA4Vew/aPmNtP6.FW34O  # echo admin | gitops get bcrypt-hash
