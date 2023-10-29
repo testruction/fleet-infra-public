@@ -1,0 +1,10 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: gitops
+  namespace: flux-system
+spec:
+  values:
+    WEAVE_GITOPS_FEATURE_TELEMETRY: "true"
+    service:
+      type: LoadBalancer
