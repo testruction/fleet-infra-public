@@ -4,7 +4,7 @@ kind: Kustomization
 namespace: fastapi-demo
 
 resources:
-  - ../base/fastapi-demo
+  - ../base
 
 patchesStrategicMerge:
   - ./values.yaml
