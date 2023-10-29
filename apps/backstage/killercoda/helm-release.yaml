@@ -9,7 +9,16 @@ spec:
     createNamespace: true
   values:
     backstage:
+      extraEnvVarsSecrets:
++     - killercoda-env
       image:
         registry: ghcr.io
         repository: testruction/backstage
         tag: 1.7.0-alpha1
+      appConfig:
+        app:
+          baseUrl: ${FRONTEND_URL}
+        backend:
+          baseUrl: ${BACKEND_URL}
+          cors:
+            origin: ${FRONTEND_URL}
