@@ -9,7 +9,7 @@ spec:
   install:
     createNamespace: true
   values:
-     backend:
+    backend:
       service:
         port: 18180
         type: LoadBalancer
