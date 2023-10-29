@@ -14,5 +14,5 @@ spec:
         name: prometheus-community
         namespace: default
       interval: 1m
-      targetNamespace: monitoring
+      TargetNamespace: monitoring
   values: {}
