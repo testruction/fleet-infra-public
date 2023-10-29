@@ -5,6 +5,7 @@ metadata:
   namespace: default
 spec:
   targetNamespace: monitoring
+  createNamespace: true
   releaseName: default
   values:
     prometheus:
