@@ -5,8 +5,9 @@ metadata:
   namespace: default
 spec:
   targetNamespace: monitoring
-  createNamespace: true
   releaseName: default
+  install:
+    createNamespace: true
   values:
     prometheus:
       enabled: true
