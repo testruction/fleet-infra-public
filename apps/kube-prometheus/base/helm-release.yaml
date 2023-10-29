@@ -4,6 +4,7 @@ metadata:
   name: kube-prometheus
   namespace: default
 spec:
+  targetNamespace: monitoring
   interval: 5m
   chart:
     spec:
@@ -14,5 +15,4 @@ spec:
         name: prometheus-community
         namespace: default
       interval: 1m
-      TargetNamespace: monitoring
   values: {}

@@ -4,8 +4,8 @@ metadata:
   name: kube-prometheus
   namespace: default
 spec:
-  TargetNamespace: monitoring
-  ReleaseName: default
+  targetNamespace: monitoring
+  releaseName: default
   values:
     prometheus:
       enabled: true
