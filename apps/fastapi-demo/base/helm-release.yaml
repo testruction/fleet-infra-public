@@ -12,3 +12,4 @@ spec:
         kind: GitRepository
         name: fastapi-demo
       interval: 1m
+  values: {}
