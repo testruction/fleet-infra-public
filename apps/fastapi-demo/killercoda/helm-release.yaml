@@ -1,9 +1,13 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
-  name: demo
-  namespace: fastapi-demo
+  name: fastapi-demo
+  namespace: default
 spec:
+  targetNamespace: fastapi-demo
+  install:
+    createNamespace: true
+  values:
      backend:
       service:
         port: 18180

@@ -3,7 +3,6 @@ apiVersion: image.toolkit.fluxcd.io/v1beta2
 kind: ImageRepository
 metadata:
   name: backend
-  namespace: fastapi-demo
 spec:
   image: ghcr.io/testruction/fastapi-sqlalchemy-cockroachdb/backend
   interval: 1h
@@ -13,7 +12,6 @@ apiVersion: image.toolkit.fluxcd.io/v1beta2
 kind: ImageRepository
 metadata:
   name: frontend
-  namespace: fastapi-demo
 spec:
   image: ghcr.io/testruction/fastapi-sqlalchemy-cockroachdb/backend
   interval: 1h
