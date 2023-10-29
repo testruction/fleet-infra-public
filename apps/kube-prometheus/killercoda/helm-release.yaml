@@ -1,9 +1,11 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
-  name: default
-  namespace: monitoring
+  name: kube-prometheus
+  namespace: default
 spec:
+  targetNamespace: monitoring
+  releaseName: default
   values:
     prometheus:
       enabled: true
