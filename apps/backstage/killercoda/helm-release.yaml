@@ -7,4 +7,9 @@ spec:
   storageNamespace: backstage
   install:
     createNamespace: true
-  values: {}
+  values:
+    backstage:
+      image:
+        registry: ghcr.io
+        repository: testruction/backstage
+        tag: 1.7.0-alpha1

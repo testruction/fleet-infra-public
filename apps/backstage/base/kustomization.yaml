@@ -5,3 +5,5 @@ resources:
   - helm-repository.yaml
   - image-policy.yaml
   - image-repository.yaml
+  - flux-rbac.yaml
+  - kubernetes-rbac.yaml
