@@ -4,6 +4,7 @@ metadata:
   name: demo
 spec:
   targetNamespace: fastapi-demo
+  storageNamespace: fastapi-demo
   install:
     createNamespace: true
   values:
