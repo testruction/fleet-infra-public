@@ -6,7 +6,7 @@ spec:
   interval: 5m
   chart:
     spec:
-      chart: fastapi
+      chart: chart/
       version: 0.2.0
       sourceRef:
         kind: GitRepository

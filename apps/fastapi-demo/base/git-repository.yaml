@@ -7,8 +7,8 @@ spec:
   url: https://github.com/testruction/fastapi-sqlalchemy-cockroachdb
   ref:
     branch: main
-  # ignore: |
-  #   # exclude all
-  #   /*
-  #   # include charts directory
-  #   !/chart/
+  ignore: |
+    # exclude all
+    /*
+    # include charts directory
+    !/chart/
