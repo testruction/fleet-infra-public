@@ -7,4 +7,4 @@ resources:
   - ../base
 
 patchesStrategicMerge:
-  - ./values.yaml
+  - ./helm-release.yaml
