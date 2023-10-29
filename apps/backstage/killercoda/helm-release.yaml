@@ -10,7 +10,7 @@ spec:
   values:
     backstage:
       extraEnvVarsSecrets:
-+     - killercoda-env
+        - killercoda-env
       image:
         registry: ghcr.io
         repository: testruction/backstage
