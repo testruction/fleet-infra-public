@@ -8,3 +8,4 @@ resources:
 
 patchesStrategicMerge:
   - helm-release.yaml
+  - image-repository.yaml
