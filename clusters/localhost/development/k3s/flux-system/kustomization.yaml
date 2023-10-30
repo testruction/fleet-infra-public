@@ -3,4 +3,4 @@ kind: Kustomization
 resources:
 - gotk-components.yaml
 - gotk-sync.yaml
-- ../../../../../kube-prometheus/killercoda
+- ../../../../../apps/kube-prometheus/killercoda
