@@ -4,6 +4,6 @@ kind: ImageRepository
 metadata:
   name: backstage
 spec:
-  image: ghcr.io/testruction/backstage-tutorial/backstage/all-in-one
+  image: ghcr.io/testruction/backstage-tutorial/backstage
   interval: 1h
   provider: generic
