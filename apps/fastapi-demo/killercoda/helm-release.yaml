@@ -12,6 +12,8 @@ spec:
       service:
         port: 18180
         type: LoadBalancer
+        annotations:
+          metallb.universe.tf/allow-shared-ip: controlplane
       metrics:
         serviceMonitor:
           enabled: true
@@ -19,6 +21,8 @@ spec:
       service:
         port: 18080
         type: LoadBalancer
+        annotations:
+          metallb.universe.tf/allow-shared-ip: controlplane
       metrics:
         serviceMonitor:
           enabled: true

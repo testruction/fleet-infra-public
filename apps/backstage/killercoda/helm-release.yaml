@@ -15,6 +15,9 @@ spec:
         registry: ghcr.io
         repository: testruction/backstage
         tag: 1.7.0-alpha1
+      service:
+        annotations:
+          metallb.universe.tf/allow-shared-ip: controlplane
       appConfig:
         app:
           baseUrl: ${FRONTEND_URL}

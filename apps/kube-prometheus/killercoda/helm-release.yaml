@@ -13,6 +13,8 @@ spec:
       enabled: true
       service:
         type: LoadBalancer
+        annotations:
+          metallb.universe.tf/allow-shared-ip: controlplane
       prometheusSpec:
         podMonitorSelectorNilUsesHelmValues: false
         serviceMonitorSelectorNilUsesHelmValues: false
