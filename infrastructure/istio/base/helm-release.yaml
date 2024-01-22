@@ -30,6 +30,7 @@ metadata:
 spec:
   interval: 5m
   targetNamespace: istio-system
+  releaseName: default
   install:
     createNamespace: true
   chart:
