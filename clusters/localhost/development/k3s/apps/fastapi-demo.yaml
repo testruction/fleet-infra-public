@@ -23,4 +23,3 @@ spec:
   prune: true
   wait: true
   timeout: 5m
-  decryption:
