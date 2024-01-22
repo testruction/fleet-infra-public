@@ -7,13 +7,13 @@ metadata:
 spec:
   interval: 5m
   targetNamespace: istio-system
+  releaseName: istio
   install:
     createNamespace: true
   chart:
     spec:
       chart: istiod
       version: 1.20.1
-      releaseName: istio
       sourceRef:
         kind: HelmRepository
         name: istio
@@ -30,12 +30,12 @@ metadata:
 spec:
   interval: 5m
   targetNamespace: istio-system
+  releaseName: kiali
   install:
     createNamespace: true
   chart:
     spec:
       chart: kiali-server
-      releaseName: kiali
       sourceRef:
         kind: HelmRepository
         name: kiali
