@@ -6,5 +6,5 @@ namespace: default
 resources:
   - ../base
 
-patches:
+patchesStrategicMerge:
   - helm-release.yaml
