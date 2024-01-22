@@ -4,6 +4,8 @@ metadata:
   name: backstage
 spec:
   interval: 5m
+  targetNamespace: backstage
+  releaseName: backstage
   chart:
     spec:
       chart: backstage
