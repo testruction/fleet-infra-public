@@ -11,6 +11,7 @@ spec:
   chart:
     spec:
       chart: weave-gitops
+      releaseName: gitops
       sourceRef:
         kind: HelmRepository
         name: gitops
