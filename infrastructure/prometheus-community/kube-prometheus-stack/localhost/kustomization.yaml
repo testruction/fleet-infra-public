@@ -4,7 +4,7 @@ kind: Kustomization
 namespace: monitoring
 
 resources:
-  - ../../base
+  - ../base
 
 patchesStrategicMerge:
   - helm-release.yaml
