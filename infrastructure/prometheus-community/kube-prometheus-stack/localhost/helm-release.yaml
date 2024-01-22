@@ -14,7 +14,7 @@ spec:
       service:
         type: LoadBalancer
         annotations:
-          metallb.universe.tf/allow-shared-ip: controlplane
+          metallb.universe.tf/allow-shared-ip: management
       prometheusSpec:
         podMonitorSelectorNilUsesHelmValues: false
         serviceMonitorSelectorNilUsesHelmValues: false

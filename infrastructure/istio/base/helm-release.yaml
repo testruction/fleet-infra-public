@@ -1,0 +1,45 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: istio
+  namespace: flux-system
+spec:
+  interval: 5m
+  targetNamespace: istio-system
+  releaseName: default
+  install:
+    createNamespace: true
+  chart:
+    spec:
+      chart: istiod
+      version: 1.20.1
+      sourceRef:
+        kind: HelmRepository
+        name: istio
+      interval: 1m
+  values: {}
+---
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: kiali
+  namespace: flux-system
+  labels:
+    backstage.io/kubernetes-id: istiod
+spec:
+  interval: 5m
+  targetNamespace: istio-system
+  install:
+    createNamespace: true
+  chart:
+    spec:
+      chart: kiali-server
+      releaseName: kiali
+      sourceRef:
+        kind: HelmRepository
+        name: kiali
+      interval: 1m
+  values:
+    auth:
+      strategy: anonymous

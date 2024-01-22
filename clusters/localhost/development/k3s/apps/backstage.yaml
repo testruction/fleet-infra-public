@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: backstage
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1
+kind: Kustomization
+metadata:
+  name: backstage
+  namespace: flux-system
+  labels:
+    backstage.io/kubernetes-id: backstage
+spec:
+  targetNamespace: backstage
+  interval: 10m
+  sourceRef:
+    kind: GitRepository
+    name: flux-system
+  serviceAccountName: kustomize-controller
+  path: ./apps/backstage/localhost
+  prune: true
+  wait: true
+  timeout: 5m

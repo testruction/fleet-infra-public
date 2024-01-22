@@ -10,6 +10,8 @@ spec:
     WEAVE_GITOPS_FEATURE_TELEMETRY: "true"
     service:
       type: LoadBalancer
+      annotations:
+        metallb.universe.tf/allow-shared-ip: management
     rbac:
       impersonationResourceNames: ['admin']
     adminUser:

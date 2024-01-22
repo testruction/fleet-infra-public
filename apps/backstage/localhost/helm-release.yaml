@@ -17,7 +17,7 @@ spec:
         tag: 1.7.0-alpha1
       service:
         annotations:
-          metallb.universe.tf/allow-shared-ip: controlplane
+          metallb.universe.tf/allow-shared-ip: management
       appConfig:
         app:
           baseUrl: ${FRONTEND_URL}
