@@ -6,13 +6,13 @@ metadata:
 spec:
   interval: 5m
   targetNamespace: smtp-system
+  releaseName: mailpit
   install:
     createNamespace: true
   chart:
     spec:
       chart: mailpit
       version: 0.10.1
-      releaseName: mailpit
       sourceRef:
         kind: HelmRepository
         name: mailpit
