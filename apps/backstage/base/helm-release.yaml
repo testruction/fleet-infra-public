@@ -101,13 +101,13 @@ spec:
             - allow: [Component, System, API, Resource, Location]
           locations:
             - type: url
-              target: https://github.com/testruction/backstage-tutorial/blob/main/software-catalog/core/catalog-info.yaml
+              target: https://github.com/testruction/backstage-tutorial/blob/main/entities/core/catalog-info.yaml
               rules:
                 - allow: [User, Group, Domain]
             - type: url
-              target: https://github.com/testruction/backstage-tutorial/blob/main/software-catalog/paypal/catalog-info.yaml
+              target: https://github.com/testruction/backstage-tutorial/blob/main/entities/paypal/catalog-info.yaml
             - type: url
-              target: https://github.com/testruction/backstage-tutorial/blob/main/software-catalog/sock-shop/catalog-info.yaml
+              target: https://github.com/testruction/backstage-tutorial/blob/main/entities/sock-shop/catalog-info.yaml
             - type: url
               target: https://github.com/testruction/fastapi-sqlalchemy-cockroachdb/blob/main/catalog-info.yaml
         kubernetes:
