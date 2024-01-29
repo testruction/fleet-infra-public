@@ -10,7 +10,7 @@ spec:
     service:
       type: LoadBalancer
       annotations:
-        metallb.universe.tf/allow-shared-ip: management
+        metallb.universe.tf/allow-shared-ip: edge-endpoint
     rbac:
       impersonationResourceNames: ['admin']
     adminUser:
