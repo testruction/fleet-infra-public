@@ -14,7 +14,7 @@ spec:
       image:
         registry: ghcr.io
         repository: ghcr.io/testruction/backstage/all-in-one
-        tag: 1.19.0
+        tag: 1.19.1
       service:
         annotations:
           metallb.universe.tf/allow-shared-ip: edge-endpoint
