@@ -14,7 +14,7 @@ spec:
       image:
         registry: ghcr.io
         repository: testruction/backstage
-        tag: 1.7.0-alpha1
+        tag: 1.19.0
       service:
         annotations:
           metallb.universe.tf/allow-shared-ip: edge-endpoint
