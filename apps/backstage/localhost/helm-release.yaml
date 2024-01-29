@@ -13,7 +13,7 @@ spec:
         - killercoda-env
       image:
         registry: ghcr.io
-        repository: testruction/backstage
+        repository: ghcr.io/testruction/backstage/all-in-one
         tag: 1.19.0
       service:
         annotations:
