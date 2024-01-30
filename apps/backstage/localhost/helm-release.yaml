@@ -29,3 +29,6 @@ spec:
       primary:
         persistence:
           size: 2Gi
+        resources:
+          limits: {}
+          requests: {}
