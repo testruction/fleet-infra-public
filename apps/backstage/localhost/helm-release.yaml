@@ -30,5 +30,6 @@ spec:
         persistence:
           size: 2Gi
         resources:
-          limits: {}
-          requests: {}
+          requests:
+            cpu: 100m
+            memory: 128Mi
