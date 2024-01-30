@@ -1,0 +1,19 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta2
+kind: HelmRelease
+metadata:
+  name: gitops
+  namespace: flux-system
+spec:
+  targetNamespace: flux-system
+  values:
+    WEAVE_GITOPS_FEATURE_TELEMETRY: "true"
+    service:
+      type: LoadBalancer
+      annotations:
+        metallb.universe.tf/allow-shared-ip: edge-endpoint
+    rbac:
+      impersonationResourceNames: ['admin']
+    adminUser:
+      create: true
+      username: admin
+      passwordHash: $2a$10$F6hP00KbH1kEVuqiPKpHJObJ5EAF6mCbfothgFWGf7pk8HTJiwkle  # The password is "admin" and encrypted using "gitops get bcrypt-hash" command line.
