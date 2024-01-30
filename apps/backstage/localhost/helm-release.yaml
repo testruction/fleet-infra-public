@@ -8,6 +8,9 @@ spec:
   install:
     createNamespace: true
   values:
+    service:
+      annotations:
+        metallb.universe.tf/allow-shared-ip: edge-endpoint
     backstage:
       extraEnvVarsSecrets:
         - killercoda-env
@@ -15,9 +18,6 @@ spec:
         registry: ghcr.io
         repository: ghcr.io/testruction/backstage/all-in-one
         tag: 1.19.1
-      service:
-        annotations:
-          metallb.universe.tf/allow-shared-ip: edge-endpoint
       appConfig:
         app:
           baseUrl: ${FRONTEND_URL}
