@@ -25,3 +25,7 @@ spec:
           baseUrl: ${BACKEND_URL}
           cors:
             origin: ${FRONTEND_URL}
+    postgresql:
+      primary:
+        persistence:
+          size: 2Gi
