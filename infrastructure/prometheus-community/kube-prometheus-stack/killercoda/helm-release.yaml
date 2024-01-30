@@ -1,0 +1,48 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta2
+kind: HelmRelease
+metadata:
+  name: kube-prometheus-stack
+  namespace: flux-system
+spec:
+  targetNamespace: monitoring
+  install:
+    createNamespace: true
+  values:
+    prometheus:
+      enabled: true
+      service:
+        type: LoadBalancer
+        annotations:
+          metallb.universe.tf/allow-shared-ip: edge-endpoint
+      prometheusSpec:
+        podMonitorSelectorNilUsesHelmValues: false
+        serviceMonitorSelectorNilUsesHelmValues: false
+        ruleSelectorNilUsesHelmValues: false
+    crds:
+      enabled: false
+    grafana:
+      enabled: false
+    kubeApiServer:
+      enabled: false
+    kubelet:
+      enabled: false
+    kubeControllerManager:
+      enabled: false
+    coreDns:
+      enabled: false
+    kubeDns:
+      enabled: false
+    kubeEtcd:
+      enabled: false
+    kubeScheduler:
+      enabled: false
+    kubeProxy:
+      enabled: false
+    kubeStateMetrics:
+      enabled: false
+    nodeExporter:
+      enabled: false
+    thanosRuller:
+      enabled: false
+    kubernetesServiceMonitors:
+      enabled: false
