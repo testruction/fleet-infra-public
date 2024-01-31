@@ -65,6 +65,9 @@ spec:
         organization:
           name: Testruction
         backend:
+          auth:
+            keys:
+              - secret: W4Lxw7m8qErGKjq/6hCS68wlFtZ25HGp  # node -p 'require("crypto").randomBytes(24).toString("base64")'
           baseUrl: http://localhost
           listen:
             host: 0.0.0.0
