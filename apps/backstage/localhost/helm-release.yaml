@@ -21,6 +21,9 @@ spec:
           baseUrl: http://localhost:7007
           cors:
             origin: http://localhost:7007
+          auth:
+            keys:
+              - W4Lxw7m8qErGKjq/6hCS68wlFtZ25HGp  # node -p 'require("crypto").randomBytes(24).toString("base64")'
     postgresql:
       primary:
         persistence:
