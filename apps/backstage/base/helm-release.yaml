@@ -41,7 +41,7 @@ spec:
     service:
       type: LoadBalancer
       ports:
-        backend: 8008
+        backend: 7007
     postgresql:
       enabled: true
       auth:
