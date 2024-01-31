@@ -53,8 +53,8 @@ spec:
     backstage:
       image:
         registry: ghcr.io
-        repository: testruction/backstage
-        tag: 1.2.0-alpha1
+        repository: testruction/backstage/all-in-one
+        tag: 1.20.0
       appConfig:
         app:
           title: Backstage tutorial

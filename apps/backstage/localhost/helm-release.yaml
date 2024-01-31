@@ -13,16 +13,7 @@ spec:
         metallb.universe.tf/allow-shared-ip: edge-endpoint
     backstage:
       image:
-        registry: ghcr.io
-        repository: ghcr.io/testruction/backstage/all-in-one
-        tag: 1.19.1
-      appConfig:
-        app:
-          baseUrl: ${FRONTEND_URL}
-        backend:
-          baseUrl: ${BACKEND_URL}
-          cors:
-            origin: ${FRONTEND_URL}
+        tag: 1.20.0
     postgresql:
       primary:
         persistence:

@@ -15,9 +15,7 @@ spec:
       extraEnvVarsSecrets:
         - killercoda-env
       image:
-        registry: ghcr.io
-        repository: ghcr.io/testruction/backstage/all-in-one
-        tag: 1.19.1
+        tag: 1.20.0
       appConfig:
         app:
           baseUrl: ${FRONTEND_URL}
