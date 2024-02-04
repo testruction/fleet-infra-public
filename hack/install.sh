@@ -8,7 +8,7 @@ curl -sfL https://get.k3s.io \
 
 # Download Flux
 VERSION="2.2.2"
-if [! -f "/usr/local/flux2/${VERSION}/flux" ]
+if [ ! -f "/usr/local/flux2/${VERSION}/flux" ]
 then
     sudo mkdir -p /usr/local/flux2/${VERSION}
 
@@ -19,7 +19,9 @@ then
 fi
 
 # Install Flux
+set -o allexport
 source .env
+set +o allexport
 flux bootstrap github \
   --token-auth \
   --owner='testruction' \
