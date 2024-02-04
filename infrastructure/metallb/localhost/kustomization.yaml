@@ -7,3 +7,6 @@ resources:
   - ../base
   - ip-address-pool.yaml
   - l2-advertisement.yaml
+
+patchesStrategicMerge:
+  - helm-release.yaml
