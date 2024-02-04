@@ -6,8 +6,8 @@ metadata:
   namespace: flux-system
 spec:
   interval: 5m
-  targetNamespace: istio-system
-  releaseName: istio
+  targetNamespace: default
+  releaseName: openelb
   install:
     createNamespace: true
   chart:
