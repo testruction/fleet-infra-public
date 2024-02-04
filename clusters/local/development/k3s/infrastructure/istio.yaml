@@ -16,7 +16,7 @@ spec:
     kind: GitRepository
     name: flux-system
   serviceAccountName: kustomize-controller
-  path: ./infrastructure/istio/base
+  path: ./infrastructure/istio/localhost
   prune: true
   wait: true
   timeout: 5m
