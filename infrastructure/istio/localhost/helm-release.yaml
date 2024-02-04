@@ -6,4 +6,6 @@ metadata:
 spec:
   values:
     deployment:
+      service_annotations:
+        metallb.universe.tf/allow-shared-ip: edge-endpoint
       service_type: LoadBalancer
