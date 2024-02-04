@@ -14,7 +14,8 @@ then
 
     curl --silent --location https://github.com/fluxcd/flux2/releases/download/v${VERSION}/flux_${VERSION}_linux_amd64.tar.gz \
     | sudo tar --directory /usr/local/flux2/${VERSION} -xvzf - \
-    && sudo ln -sf /usr/local/flux2/${VERSION}/flux /usr/local/bin/flux
+    && sudo ln -sf /usr/local/flux2/${VERSION}/flux /usr/local/bin/flux \
+    && flux version
 fi
 
 # Install Flux
